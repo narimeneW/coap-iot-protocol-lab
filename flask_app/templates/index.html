@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Monitor Panel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Device Monitor Panel</h1>
+
+        <div class="gauge-container">
+            <canvas id="gaugeChart"></canvas>
+            <div class="gauge-value" id="gaugeValue">0.00%</div>
+        </div>
+
+        <div class="button-container">
+            <button class="btn btn-on" id="btnOn" onclick="controlLED('On')">ON</button>
+            <button class="btn btn-off" id="btnOff" onclick="controlLED('Off')">OFF</button>
+        </div>
+
+        <div class="info">
+            <p>Device Host: <span id="deviceHost">{{ device_host }}</span></p>
+            <p>LED Status: <span id="ledStatus">Unknown</span></p>
+            <p>Temperature: <span id="temperature">--</span> °C</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

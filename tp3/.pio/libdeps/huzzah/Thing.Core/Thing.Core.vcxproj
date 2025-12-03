@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Thing.Core\AppContainer.cpp" />
+    <ClCompile Include="Thing.Core\AppTaskScheduler.cpp" />
+    <ClCompile Include="Thing.Core\DigitalIOMonitor.cpp" />
+    <ClCompile Include="Thing.Core\DigitalOutputMonitor.cpp" />
+    <ClCompile Include="Thing.Core\ESP8266\Main.cpp" />
+    <ClCompile Include="Thing.Core\GenericAnalogInput.cpp" />
+    <ClCompile Include="Thing.Core\GenericDigitalInput.cpp" />
+    <ClCompile Include="Thing.Core\GenericDigitalOutput.cpp" />
+    <ClCompile Include="Thing.Core\GenericInverseDigitalInput.cpp" />
+    <ClCompile Include="Thing.Core\GenericInverseDigitalOutput.cpp" />
+    <ClCompile Include="Thing.Core\InputHelpers.cpp" />
+    <ClCompile Include="Thing.Core\IOManager.cpp" />
+    <ClCompile Include="Thing.Core\IOManagerAnalogInput.cpp" />
+    <ClCompile Include="Thing.Core\IP.cpp" />
+    <ClCompile Include="Thing.Core\MACAddress.cpp" />
+    <ClCompile Include="Thing.Core\ThresholdedAnalogInput.cpp" />
+    <ClCompile Include="Thing.Core\Utils.cpp" />
+    <ClCompile Include="Thing.Core\WiFiBase.cpp" />
+    <ClCompile Include="Thing.Core\Windows\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Thing.Core\DebouncedInput.h" />
+    <ClInclude Include="Thing.Core\ESP\FileSystem.h" />
+    <ClInclude Include="Thing.Core\AppContainer.h" />
+    <ClInclude Include="Thing.Core\AppTaskScheduler.h" />
+    <ClInclude Include="Thing.Core\DigitalIOMonitor.h" />
+    <ClInclude Include="Thing.Core\DigitalOutputMonitor.h" />
+    <ClInclude Include="Thing.Core\Arduino\Hardware.h" />
+    <ClInclude Include="Thing.Core\Arduino\Main.h" />
+    <ClInclude Include="Thing.Core\Arduino\SerialLogger.h" />
+    <ClInclude Include="Thing.Core\ESP\TaskScheduler.h" />
+    <ClInclude Include="Thing.Core\ESP8266\WiFi.h" />
+    <ClInclude Include="Thing.Core\GenericAnalogInput.h" />
+    <ClInclude Include="Thing.Core\GenericDigitalInput.h" />
+    <ClInclude Include="Thing.Core\GenericDigitalInputBase.h" />
+    <ClInclude Include="Thing.Core\GenericDigitalOutput.h" />
+    <ClInclude Include="Thing.Core\GenericDigitalOutputBase.h" />
+    <ClInclude Include="Thing.Core\GenericInverseDigitalInput.h" />
+    <ClInclude Include="Thing.Core\GenericInverseDigitalOutput.h" />
+    <ClInclude Include="Thing.Core\HardwareEnumerations.h" />
+    <ClInclude Include="Thing.Core\IAnalogInput.h" />
+    <ClInclude Include="Thing.Core\IAnalogIO.h" />
+    <ClInclude Include="Thing.Core\IAnalogIOListener.h" />
+    <ClInclude Include="Thing.Core\IApp.h" />
+    <ClInclude Include="Thing.Core\IAppContainer.h" />
+    <ClInclude Include="Thing.Core\IDigitalInput.h" />
+    <ClInclude Include="Thing.Core\IDigitalIO.h" />
+    <ClInclude Include="Thing.Core\IDigitalIOListeners.h" />
+    <ClInclude Include="Thing.Core\IDigitalIOMonitor.h" />
+    <ClInclude Include="Thing.Core\IDigitalOutput.h" />
+    <ClInclude Include="Thing.Core\IDigitalOutputMonitor.h" />
+    <ClInclude Include="Thing.Core\IFileSystem.h" />
+    <ClInclude Include="Thing.Core\IHardware.h" />
+    <ClInclude Include="Thing.Core\ILogger.h" />
+    <ClInclude Include="Thing.Core\ILoggerListener.h" />
+    <ClInclude Include="Thing.Core\ILoggerManager.h" />
+    <ClInclude Include="Thing.Core\InputHelpers.h" />
+    <ClInclude Include="Thing.Core\IoC.h" />
+    <ClInclude Include="Thing.Core\IOManager.h" />
+    <ClInclude Include="Thing.Core\IOManagerAnalogInput.h" />
+    <ClInclude Include="Thing.Core\IOManagerDigitalInput.h" />
+    <ClInclude Include="Thing.Core\IOManagerDigitalIO.h" />
+    <ClInclude Include="Thing.Core\IOManagerDigitalOutput.h" />
+    <ClInclude Include="Thing.Core\IP.h" />
+    <ClInclude Include="Thing.Core\IPrinter.h" />
+    <ClInclude Include="Thing.Core\IRunnable.h" />
+    <ClInclude Include="Thing.Core\ITaskScheduler.h" />
+    <ClInclude Include="Thing.Core\IThresholdedAnalogInput.h" />
+    <ClInclude Include="Thing.Core\IWiFi.h" />
+    <ClInclude Include="Thing.Core\LoggerManager.h" />
+    <ClInclude Include="Thing.Core\LogLevel.h" />
+    <ClInclude Include="Thing.Core\MACAddress.h" />
+    <ClInclude Include="Thing.Core\ThresholdedAnalogInput.h" />
+    <ClInclude Include="Thing.Core\Utils.h" />
+    <ClInclude Include="Thing.Core\WiFiBase.h" />
+    <ClInclude Include="Thing.Core\OS\CLI11.h" />
+    <ClInclude Include="Thing.Core\OS\ConsoleInterface.h" />
+    <ClInclude Include="Thing.Core\OS\FakeHardware.h" />
+    <ClInclude Include="Thing.Core\OS\Main.h" />
+    <ClInclude Include="Thing.Core\Windows\FileSystem.h" />
+    <ClInclude Include="Thing.Core\OS\WiFi.h" />
+    <ClInclude Include="Thing.Core\OS\Utils.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{b90ec2a0-a2ed-48b2-8434-34dc814f63d3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ThingCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Thing.Core</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithBoard|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithBoard|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

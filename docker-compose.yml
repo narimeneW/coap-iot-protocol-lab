@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flask-coap:
+    build: ./flask_app
+    container_name: device-monitor
+    ports:
+      - "8080:8080"
+    environment:
+      - DEVICE_HOST=${ESP8266_IP:-192.168.1.100}
+      - COAP_PORT=${COAP_PORT:-5683}
+      - FLASK_ENV=development
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - ./flask_app:/app
